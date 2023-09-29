@@ -9,17 +9,21 @@ img {
     width: 100%;
 }
 
+p {
+    padding: 0px 60px;
+}
+
 .line-star {
     width: 100px;
     height: 5px;
 }
 
-.color-green-bg {
-    background-color: var(--secondary-green);
+.text-my-green {
+    color: var(--secondary-green);
 }
 
-p {
-    padding: 0px 60px;
+.bg-my-green {
+    background-color: var(--secondary-green);
 }
 
 .bg-my-blue {
@@ -28,4 +32,8 @@ p {
 
 .bg-my-dark-blue {
     background-color: var(--primary-blue);
+}
+
+.icon-wrapper {
+    font-size: 1.5rem;
 }
