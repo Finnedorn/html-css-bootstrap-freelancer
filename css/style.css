@@ -9,6 +9,10 @@ img {
     width: 100%;
 }
 
+.hero-img {
+    width: 250px;
+}
+
 p {
     padding: 0px 60px;
 }
@@ -20,6 +24,10 @@ p {
 
 .text-my-green {
     color: var(--secondary-green);
+}
+
+.text-my-dark-blue {
+    color: var(--primary-blue);
 }
 
 .bg-my-green {
