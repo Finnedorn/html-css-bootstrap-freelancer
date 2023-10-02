@@ -126,6 +126,9 @@ p {
     border-top: 0;
     border-left: 0;
     border-right: 0;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 /*animations*/
