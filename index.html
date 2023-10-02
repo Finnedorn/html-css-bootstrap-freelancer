@@ -10,17 +10,29 @@
 </head>
 <body>
     <header>
-        <nav class="container-fluid bg-my-blue">
-            <div class="container text-light py-4">
-                <div class="d-flex justify-content-between">
-                    <div>
-                        <h2>
-                            Start Bootstrap
-                        </h2>
-                    </div>
-                </div>
+        <nav class="navbar navbar-expand-md bg-my-blue">
+            <div class="container text-uppercase">
+              <a class="navbar-brand text-light fs-2 fw-bold" href="#">
+                    Start Bootstrap
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light fs-5" aria-current="page" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fs-5" href="#about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light fs-5" href="#contact">Contact us</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </nav>
     </header>
     <main>
         <!--hero-->
@@ -35,7 +47,7 @@
                         START BOOTSTRAP
                     </h1>
                     <!--star-->
-                    <div class="d-flex row justify-content-center align-items-center py-2">
+                    <div class="row justify-content-center align-items-center py-2">
                         <div class="col-5 d-flex justify-content-end">
                             <div class="bg-light line-star rounded-5"></div>
                         </div>
@@ -55,17 +67,17 @@
             </div>
         </section>
         <!--portfolio-->
-        <section>
+        <section id="portfolio">
             <div class="container m-auto py-4">
                 <div class="text-center text-my-dark-blue">
                     <h2>PORTFOLIO</h2>
                 </div>
                 <!--star-->
-                <div class="d-flex row justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center py-1">
                     <div class="col-5 d-flex justify-content-end">
                         <div class="bg-my-dark-blue line-star rounded-5"></div>
                     </div>
-                    <div class="col-1 text-my-dark-blue fs-5">
+                    <div class="col-1 text-my-dark-blue text-center fs-5">
                         <i class="fa-solid fa-star"></i>
                     </div>
                     <div class="col-5">
@@ -75,8 +87,8 @@
                 <!--cards-->
                 <div class="row align-content-center align-items-center">
                     <div class="col-12 col-md-6 col-xl-4 my-4">
-                        <div class="rounded-4 overflow-hidden">
-                            <a href="">
+                        <div class="my-image rounded-4 overflow-hidden position-relative">
+                            <a href="#">
                                 <img src="img/cabin.png" alt="">
                             </a>
                         </div>
@@ -120,14 +132,14 @@
             </div>
         </section>
         <!--about-->
-        <section class="bg-my-green">
+        <section id="about" class="bg-my-green">
             <div class="container m-auto py-4">
                 <div class="text-center">
                     <h2 class="text-white">
                         ABOUT
                     </h2>
                     <!--star-->
-                    <div class="d-flex row justify-content-center align-items-center">
+                    <div class="row justify-content-center align-items-center">
                         <div class="col-5 d-flex justify-content-end">
                             <div class="bg-light line-star rounded-5"></div>
                         </div>
@@ -138,7 +150,7 @@
                             <div class="bg-light line-star rounded-5"></div>
                         </div>
                     </div>
-                    <div class="d-flex row justify-content-center align-items-center">
+                    <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-md-6 text-white text-start">
                             <p class="fs-4 py-4">
                                 Freelance is a free Boostrap theme created by Start Bootstrap. The Download includes the complete source files including HTML, CSS and Javascript as well as optional LESS stylesheets for easy customization.
@@ -151,9 +163,11 @@
                         </div>
                         <!--button download-->
                         <div>
-                            <button type="button" class="btn btn-outline-light btn-lg my-2">
-                                <i class="fa-solid fa-download"></i>
-                                Download
+                            <button type="button" class="my-button btn btn-outline-light my-2">
+                                <a href="#">
+                                    <i class="fa-solid fa-download"></i>
+                                    Download
+                                </a>
                             </button>
                         </div>
                     </div>
@@ -161,13 +175,13 @@
             </div>
         </section>
         <!--contact me-->
-        <section>
+        <section id="contact">
             <div class="container m-auto py-4 text-center">
                 <h2 class="text-my-dark-blue ">
                     CONTACT ME
                 </h2>
                 <!--star-->
-                <div class="d-flex row justify-content-center align-items-center">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-5 d-flex justify-content-end">
                         <div class="bg-my-dark-blue line-star rounded-5"></div>
                     </div>
@@ -179,6 +193,21 @@
                     </div>
                 </div>
             </div>
+            <form class="container">
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Name">
+                </div>
+                <div>
+                    <textarea name="Message" class="form-control" cols="0" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </section>
     </main>
     <footer>
@@ -251,5 +280,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
 </body>
 </html>

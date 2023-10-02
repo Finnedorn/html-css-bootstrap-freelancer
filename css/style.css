@@ -1,39 +1,15 @@
-/*root*/
+/*palette*/
 
 :root {
     --primary-blue: #2c3e50;
     --secondary-green: #1abc9c;
     --secondary-blue: #3a546d;
-}
-
-/*scrollbar*/
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: rgb(182, 182, 182);
-    border-radius: 20px;
-}
-
-/*miscellaneous*/
-
-img {
-    width: 100%;
-}
-
-p {
-    padding: 0px 60px;
-}
-
-.hero-img {
-    width: 250px;
-}
-
-.line-star {
-    width: 100px;
-    height: 5px;
+    --secondary-pink: #ba4c63;
+    --secondary-turquoise: #1fa4b6;
+    --secondary-black: #130f0f;
+    --secondary-azure: #1d83c1;
+    --secondary-light-blue: #1037b5;
+    --secondary-beiges: #ccb2a3;
 }
 
 .text-my-green {
@@ -56,6 +32,125 @@ p {
     background-color: var(--primary-blue);
 }
 
+.bg-my-pink {
+    background-color: var(--secondary-pink);
+}
+
+.bg-my-turquoise {
+    background-color: var(--secondary-turquoise);
+}
+
+.bg-my-black {
+    background-color: var(--secondary-black);
+}
+
+.bg-my-azure {
+    background-color: var(--secondary-azure);
+}
+
+.bg-my-light-blue {
+    background-color: var(--secondary-light-blue);
+}
+
+.bg-my-beiges {
+    background-color: var(--secondary-beiges);
+}
+
+/*scrollbar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(182, 182, 182);
+    border-radius: 20px;
+}
+
+/*miscellaneous*/
+
+ul>li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul>li>a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    padding: 0px 60px;
+}
+
+.hero-img {
+    width: 250px;
+}
+
+.line-star {
+    width: 100px;
+    height: 5px;
+}
+
 .icon-wrapper {
     font-size: 1.5rem;
+}
+
+.my-plus {
+    position: absolute;
+    z-index: 950;
+    width: 100%;
+    top: 70px;
+    left: 135px;
+    opacity: 1;
+}
+
+.my-plus>a>img {
+    margin: 0 auto;
+    width: 100px;
+    filter: invert(100%) 
+    sepia(100%) saturate(0%) hue-rotate(167deg) 
+    brightness(100%) contrast(104%);
+}
+
+.form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
+
+/*animations*/
+
+.my-image:hover::after {
+    content:"+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--secondary-green);
+    color: white;
+    font-size: 5rem;
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.my-button>a:hover {
+    color: var(--primary-blue) !important;
+}
+
+a.nav-link:hover {
+    color: var(--secondary-green) !important;
 }
