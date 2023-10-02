@@ -105,21 +105,37 @@ p {
     font-size: 1.5rem;
 }
 
+.navbar-toggler {
+    color: white !important;
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%) 
+    sepia(100%) saturate(0%) hue-rotate(167deg) 
+    brightness(100%) contrast(104%);
+}
+
 .my-plus {
     position: absolute;
-    z-index: 950;
-    width: 100%;
-    top: 70px;
-    left: 135px;
-    opacity: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    opacity: 0;
 }
 
 .my-plus>a>img {
+    position: absolute;
     margin: 0 auto;
     width: 100px;
     filter: invert(100%) 
     sepia(100%) saturate(0%) hue-rotate(167deg) 
     brightness(100%) contrast(104%);
+    width: 100px;
+    top: 105px;
+    left: 180px;
 }
 
 .form-control {
@@ -133,21 +149,9 @@ p {
 
 /*animations*/
 
-.my-image:hover::after {
-    content:"+";
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: var(--secondary-green);
-    color: white;
-    font-size: 5rem;
-    opacity: 0.8;
-    transition: all 1s;
+.my-plus:hover {
+    opacity: 1;
+    transition: all 0.3s;
 }
 
 .my-button>a:hover {
